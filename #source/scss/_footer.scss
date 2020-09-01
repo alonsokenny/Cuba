@@ -1,0 +1,121 @@
+.footer {
+	padding: 55px 0 32px;
+	background-color: #f8f8f8;
+	@media (max-width: 840px) {
+		padding: 35px 0 22px;
+	}
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 840px) {
+			flex-wrap: wrap;
+		}
+		@media (max-width: 470px) {
+			display: block;
+		}
+	}
+	&__item {
+		padding: 0 15px;
+		@media (max-width: 840px) {
+			flex: 1 0 50%;
+			margin-bottom: 30px;
+		}
+		@media (max-width: 470px){
+			width: 100%;
+			padding-right: 0;
+		}
+		&:first-child {
+			padding-left: 180px;
+			flex: 1 1 300px;
+			@media (max-width: 1070px) {
+				flex: 1 1 140px;
+				padding-left: 0;
+			}
+		}
+		&:nth-child(2),
+		&:nth-child(3) {
+			flex: 1 1 140px;
+
+		}
+		&:last-child {
+			flex: 1 1 300px;
+		}
+	}
+	&__item-contacts {
+		a{
+			padding-left: 28px;
+		}
+		.social:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			width: 16px;
+			height: 16px;
+			display: inline-block;
+		}
+		.footer__item-link--message:before {
+			top: 1px;
+			background-image: url('../img/footer/contact.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.footer__item-link--facebook:before {
+			background-image: url('../img/footer/facebook.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			top: 1px;
+		}
+		.footer__item-link--instagram:before {
+			background-image: url('../img/footer/instagram.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			top: 2px;
+		} 
+		.footer__item-link--youtube:before {
+			background-image: url('../img/footer/youtube.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			top: 1px;
+		}
+		.footer__item-link--email:before {
+			background-image: url('../img/footer/email.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 13px;
+			top: 2px;
+		}
+	}
+	&__item-title {
+		font-size: 15px;
+		line-height: 20px;
+		color: #4e5665;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		@media (max-width: 470px) {
+			margin-bottom: 10px;
+		}
+	}
+	&__item-list {
+
+	}
+	&__item-link {
+		font-size: 14px;
+		line-height: 19px;
+		color: #505050;
+		margin-bottom: 8px;
+		position: relative;
+	}
+	&__copy {
+		font-size: 14px;
+		line-height: 19px;
+		color: #505050;
+		padding-top: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@media (max-width: 470px) {
+			padding-top: 0px;
+		}
+	}
+}
